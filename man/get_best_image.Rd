@@ -7,11 +7,11 @@
 get_best_image(paths, download_endpoint, branch)
 }
 \arguments{
-\item{paths}{A list of path information}
+\item{paths}{A list of path information.}
 
-\item{download_endpoint}{The download endpoint for the repo}
+\item{download_endpoint}{The download endpoint for the repo.}
 
-\item{branch}{The repo active branch}
+\item{branch}{The repo active branch.}
 }
 \value{
 A single url path

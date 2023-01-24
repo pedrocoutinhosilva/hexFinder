@@ -5,14 +5,21 @@
 \title{Search the given content for paths that match the constrains from
   ignore_patterns and logo_patterns.}
 \usage{
-get_possible_paths(content, ignore_patterns, logo_patterns, pkg_name)
+get_possible_paths(
+  content,
+  logo_patterns = getOption("hexFinder.logo_patterns"),
+  ignore_patterns = getOption("hexFinder.ignore_patterns"),
+  pkg_name = ""
+)
 }
 \arguments{
-\item{content}{The result of calling get_endpoint_content() on a github repo}
+\item{content}{The result of calling get_endpoint_content() on a github repo.}
 
-\item{ignore_patterns}{A vector of patterns to ignore}
+\item{logo_patterns}{A vector of patterns to ignore.}
 
-\item{logo_patterns}{A vector of patterns to ignore}
+\item{ignore_patterns}{A vector of patterns to ignore.}
+
+\item{pkg_name}{AName of the package to find logos for.}
 }
 \value{
 A list of paths that match the given patterns

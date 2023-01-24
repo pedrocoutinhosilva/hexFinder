@@ -5,14 +5,14 @@
 \title{Fetch the content of a endpoint. Multiple branches can be given, the content
 returned will also include wich was the valid branch.}
 \usage{
-get_endpoint_content(endpoint, branchs = c("master", "main"), token)
+get_endpoint_content(endpoint, branchs = c("master", "main"), token = "")
 }
 \arguments{
-\item{endpoint}{The github endpoint to search}
+\item{endpoint}{The github endpoint to search.}
 
 \item{branchs}{The branches to search. Defaults to main and master.}
 
-\item{token}{A github personal access token. Defaults to the enviromental}
+\item{token}{A github personal access token. Defaults to the enviromental.}
 }
 \value{
 A named list with the branch name and the repo content

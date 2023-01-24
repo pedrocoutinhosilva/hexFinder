@@ -32,9 +32,9 @@ get_metacran_info <- function(pkg_name) {
 #' Fetch the content of a endpoint. Multiple branches can be given, the content
 #' returned will also include wich was the valid branch.
 #'
-#' @param endpoint The github endpoint to search
+#' @param endpoint The github endpoint to search.
 #' @param branchs The branches to search. Defaults to main and master.
-#' @param token A github personal access token. Defaults to the enviromental
+#' @param token A github personal access token. Defaults to the enviromental.
 #'
 #' @importFrom httr GET add_headers content
 #' @importFrom glue glue
@@ -43,7 +43,7 @@ get_metacran_info <- function(pkg_name) {
 #' @return A named list with the branch name and the repo content
 get_endpoint_content <- function(endpoint,
                                  branchs = c("master", "main"),
-                                 token) {
+                                 token = "") {
   responses <- branchs |>
     map(\(branch) {
       query_endpoint <- glue("{endpoint}/git/trees/{branch}?recursive=1",
@@ -89,30 +89,36 @@ get_endpoint_content <- function(endpoint,
     return(NULL)
   }
 
-  # if the found branch is not valid, abort
-  if (length(responses[[1]]$content) < 1) {
-    return(NULL)
-  }
-
   responses[[1]]
 }
 
 #' Search the given content for paths that match the constrains from
 #'   ignore_patterns and logo_patterns.
 #'
-#' @param content The result of calling get_endpoint_content() on a github repo
-#' @param ignore_patterns A vector of patterns to ignore
-#' @param logo_patterns A vector of patterns to ignore
+#' @param content The result of calling get_endpoint_content() on a github repo.
+#' @param ignore_patterns A vector of patterns to ignore.
+#' @param logo_patterns A vector of patterns to ignore.
+#' @param pkg_name AName of the package to find logos for.
 #'
 #' @importFrom glue glue
 #'
 #' @keywords gather internal
 #' @return A list of paths that match the given patterns
 get_possible_paths <- function(content,
-                               ignore_patterns,
-                               logo_patterns,
-                               pkg_name) {
-  paths <- content |>
+                               logo_patterns = getOption("hexFinder.logo_patterns"), #nolint
+                               ignore_patterns = getOption("hexFinder.ignore_patterns"), #nolint
+                               pkg_name = "") {
+
+  # if content is empty, abort
+  if (length(content) < 1) {
+    return(NULL)
+  }
+
+  if (pkg_name == "") {
+    return(NULL)
+  }
+
+  content |>
     purrr::keep(\(entry) {
       if (is.null(names(entry))) {
         return(FALSE)
@@ -143,9 +149,9 @@ get_possible_paths <- function(content,
 
 #' Returns the best image path from a list of image paths
 #'
-#' @param paths A list of path information
-#' @param download_endpoint The download endpoint for the repo
-#' @param branch The repo active branch
+#' @param paths A list of path information.
+#' @param download_endpoint The download endpoint for the repo.
+#' @param branch The repo active branch.
 #'
 #' @importFrom glue glue
 #' @importFrom purrr map
