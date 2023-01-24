@@ -1,12 +1,10 @@
 # hexFinder <img src="man/figures/logo.svg" align="right" alt="" width="130" />
 <!-- badges: start -->
-<!--
 [![R-CMD-check](https://github.com/pedrocoutinhosilva/hexFinder/workflows/R-CMD-check/badge.svg)](https://CRAN.R-project.org/package=hexFinder)
 [![Codecov test coverage](https://codecov.io/gh/pedrocoutinhosilva/hexFinder/branch/main/graph/badge.svg)](https://app.codecov.io/gh/pedrocoutinhosilva/hexFinder?branch=main)
 [![cranlogs](https://www.r-pkg.org/badges/version/hexFinder)](https://CRAN.R-project.org/package=hexFinder)
 [![cranlogs](https://cranlogs.r-pkg.org/badges/hexFinder)](https://CRAN.R-project.org/package=hexFinder)
 [![total](https://cranlogs.r-pkg.org/badges/grand-total/hexFinder)](https://CRAN.R-project.org/package=hexFinder)
--->
 <!-- badges: end -->
 
 Scavenge the web for possible hex logos for CRAN packages.
