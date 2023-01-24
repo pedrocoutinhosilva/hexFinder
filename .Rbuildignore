@@ -1,0 +1,7 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+^output$
+^docs$
+^pkgdown$
+.lintr
+.github
