@@ -21,6 +21,9 @@ test_that("get_endpoint_content", {
   # missing arguments
   expect_error(get_endpoint_content())
 
+  # Skip endpoint tests on ci
+  skip_on_ci()
+
   # Valid return for existing repo with no token
   get_endpoint_content("https://api.github.com/repos/pedrocoutinhosilva/hexFinder") |> #nolint
     expect_named()
@@ -72,6 +75,9 @@ test_that("get_best_image ", {
   expect_error(get_best_image())
   expect_error(get_best_image(list(), "https://raw.githubusercontent.com/repos/pedrocoutinhosilva/hexFinder", "main")) #nolint
 
+  # Skip endpoint tests on ci
+  skip_on_ci()
+
   # Minimal examples
   expect_type(get_best_image(
     list(list(path = "man/figures/logo.svg")),
@@ -84,6 +90,9 @@ test_that("get_best_image ", {
 test_that("keep_good_ratio_images ", {
   # missing arguments
   expect_error(keep_good_ratio_images())
+
+  # Skip endpoint tests on ci
+  skip_on_ci()
 
   # Minimal examples
   expect_type(keep_good_ratio_images(
