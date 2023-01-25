@@ -96,8 +96,8 @@ get_endpoint_content <- function(endpoint,
 #'   ignore_patterns and logo_patterns.
 #'
 #' @param content The result of calling get_endpoint_content() on a github repo.
-#' @param ignore_patterns A vector of patterns to ignore.
-#' @param logo_patterns A vector of patterns to ignore.
+#' @param ignore_patterns A regex string of patterns to ignore.
+#' @param logo_patterns A regex string of patterns to accept.
 #' @param pkg_name AName of the package to find logos for.
 #'
 #' @importFrom glue glue
@@ -105,8 +105,8 @@ get_endpoint_content <- function(endpoint,
 #' @keywords gather internal
 #' @return A list of paths that match the given patterns
 get_possible_paths <- function(content,
-                               logo_patterns = getOption("hexFinder.logo_patterns"), #nolint
-                               ignore_patterns = getOption("hexFinder.ignore_patterns"), #nolint
+                               logo_patterns,
+                               ignore_patterns,
                                pkg_name = "") {
 
   # if content is empty, abort
@@ -128,9 +128,6 @@ get_possible_paths <- function(content,
         return(FALSE)
       }
 
-      ignore_patterns <- ignore_patterns |>
-        paste0(collapse = "|")
-
       if (grepl(ignore_patterns, entry$path, fixed = FALSE)) {
         return(FALSE)
       }
@@ -138,10 +135,6 @@ get_possible_paths <- function(content,
       if (entry$type != "blob") {
         return(FALSE)
       }
-
-      logo_patterns <- logo_patterns |>
-        paste0(collapse = "|") |>
-        glue(pkg_name = pkg_name)
 
       grepl(logo_patterns, entry$path, fixed = FALSE)
     })
@@ -205,17 +198,17 @@ keep_good_ratio_images <- function(paths, download_endpoint, branch) {
 
     # discard way off aspect ratios
     if (aspect_ratio > 1.8) {
-      return(FALSE)
+      return(FALSE) #nocov
     }
 
     # use perfect ratio image
     if (aspect_ratio > 1.151 && aspect_ratio < 1.154) {
-      return(TRUE)
+      return(TRUE) #nocov
     }
 
     # discard really large images unless perfect ratio
     if (info$width > 1279 || info$height > 1279) {
-      return(FALSE)
+      return(FALSE) #nocov
     }
 
     return(TRUE)
@@ -252,11 +245,11 @@ search_repo_logo <- function(pkg_name,
 
   # Warn user about github pat. Trigers once per session
   if (token == "" && getOption("hexFinder.pat_warning_first_time")) {
-    log("No github personal access token provided.")
-    log("Limited search rates for github will apply.")
-    log("Set up github_pat enviromental variable if you plan to query multiple repos in a short time") #nolint
+    log("No github personal access token provided.") #nocov
+    log("Limited search rates for github will apply.") #nocov
+    log("Set up github_pat enviromental variable if you plan to query multiple repos in a short time") #nolint #nocov
 
-    options(hexFinder.pat_warning_first_time = FALSE)
+    options(hexFinder.pat_warning_first_time = FALSE) #nocov
   }
 
   # if no valid repo is given, abort
@@ -275,13 +268,13 @@ search_repo_logo <- function(pkg_name,
 
   # if the found branch is not valid, abort
   if (is.null(response)) {
-    return(NULL)
+    return(NULL) #nocov
   }
 
   paths <- get_possible_paths(
     response$content,
-    ignore_patterns,
-    logo_patterns,
+    logo_patterns |> glue(pkg_name = pkg_name),
+    ignore_patterns |> glue(pkg_name = pkg_name),
     pkg_name
   )
 
@@ -297,7 +290,7 @@ search_repo_logo <- function(pkg_name,
 
   # bail if no images
   if (is.null(paths)) {
-    return(NULL)
+    return(NULL) #nocov
   }
 
   if (length(paths) > 0) {
@@ -306,5 +299,5 @@ search_repo_logo <- function(pkg_name,
     return(path)
   }
 
-  return(NULL)
+  return(NULL) #nocov
 }

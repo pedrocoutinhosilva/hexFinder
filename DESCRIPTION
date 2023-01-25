@@ -1,6 +1,6 @@
 Package: hexFinder
 Type: Package
-Title: Find hex logos for CRAN packages
+Title: Find Hex Logos for CRAN Packages
 Version: 0.8.0
 Authors@R: person("Pedro", "Silva", email = "pedrocoutinhosilva@gmail.com",
   role = c("aut", "cre"))
@@ -12,7 +12,6 @@ LazyData: true
 Imports:
   ggplot2,
   hexSticker,
-  magrittr,
   tools,
   utils,
   methods,
@@ -24,6 +23,7 @@ Imports:
   stringr,
   httr
 RoxygenNote: 7.1.2
-Suggests: 
+Suggests:
+    httptest,
     testthat (>= 3.0.0)
 Config/testthat/edition: 3

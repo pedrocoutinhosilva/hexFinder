@@ -1,0 +1,959 @@
+{
+    "sha": "9d988a6cf6a046172218a0cac49e29551290bfd7",
+    "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/trees/9d988a6cf6a046172218a0cac49e29551290bfd7",
+    "tree": [
+        {
+            "path": ".Rbuildignore",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "7a98df8d1405cf8172d5301c223830e00d8d4255",
+            "size": 68,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/7a98df8d1405cf8172d5301c223830e00d8d4255"
+        },
+        {
+            "path": ".gitattributes",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "dfe0770424b2a19faf507a501ebfc23be8f54e7b",
+            "size": 66,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/dfe0770424b2a19faf507a501ebfc23be8f54e7b"
+        },
+        {
+            "path": ".github",
+            "mode": "040000",
+            "type": "tree",
+            "sha": "dd32bc35233d4b08cebd6a39d497db83d517b7ee",
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/trees/dd32bc35233d4b08cebd6a39d497db83d517b7ee"
+        },
+        {
+            "path": ".github/workflows",
+            "mode": "040000",
+            "type": "tree",
+            "sha": "8ec561000d00a6ca2d0e38a474b107f4f6956db9",
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/trees/8ec561000d00a6ca2d0e38a474b107f4f6956db9"
+        },
+        {
+            "path": ".github/workflows/R-CMD-check.yaml",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "03cb709ea4ab09f3a8ab155db47a64c60a548f69",
+            "size": 1015,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/03cb709ea4ab09f3a8ab155db47a64c60a548f69"
+        },
+        {
+            "path": ".github/workflows/deploy-docs.yaml",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "92712f889a989d1ca43fba3f35ee0fe508926920",
+            "size": 996,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/92712f889a989d1ca43fba3f35ee0fe508926920"
+        },
+        {
+            "path": ".github/workflows/test-coverage.yaml",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "e39b1ef2627bafa5e7d881c0b54e8537a00c561c",
+            "size": 756,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/e39b1ef2627bafa5e7d881c0b54e8537a00c561c"
+        },
+        {
+            "path": ".gitignore",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "95ba253b8f49626cf0fd845a4786a72d96418a8c",
+            "size": 57,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/95ba253b8f49626cf0fd845a4786a72d96418a8c"
+        },
+        {
+            "path": ".lintr",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "2bfa97efbef3b8352779bb54814070ccf328e36d",
+            "size": 118,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/2bfa97efbef3b8352779bb54814070ccf328e36d"
+        },
+        {
+            "path": "DESCRIPTION",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "ecbb3e861e7d4ae8177a9270adf294105c37e98b",
+            "size": 576,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/ecbb3e861e7d4ae8177a9270adf294105c37e98b"
+        },
+        {
+            "path": "LICENSE",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "de2a714b14032c00a3ee962f92bb5db084a28d5f",
+            "size": 49,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/de2a714b14032c00a3ee962f92bb5db084a28d5f"
+        },
+        {
+            "path": "NAMESPACE",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "2e0370e5c3ee6f815705247e596db3311f2d8362",
+            "size": 699,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/2e0370e5c3ee6f815705247e596db3311f2d8362"
+        },
+        {
+            "path": "R",
+            "mode": "040000",
+            "type": "tree",
+            "sha": "7aeb4be0200d3049d7ea15416838e9424fcd8320",
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/trees/7aeb4be0200d3049d7ea15416838e9424fcd8320"
+        },
+        {
+            "path": "R/gather.R",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "9b927da5cc03ba05df788bbc7a1b1c866b52eb14",
+            "size": 8710,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/9b927da5cc03ba05df788bbc7a1b1c866b52eb14"
+        },
+        {
+            "path": "R/images.R",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "011b44bd4ca7bc07cedc0227de820c4d8e6b652f",
+            "size": 3181,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/011b44bd4ca7bc07cedc0227de820c4d8e6b652f"
+        },
+        {
+            "path": "R/locate.R",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "e0eeb079f92c7a757b9c8c94ac10695f82da62ef",
+            "size": 2812,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/e0eeb079f92c7a757b9c8c94ac10695f82da62ef"
+        },
+        {
+            "path": "R/scavenge.R",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "035f5d62a3ccde04f7a3e60f8a7bfe6c1a4bb935",
+            "size": 3529,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/035f5d62a3ccde04f7a3e60f8a7bfe6c1a4bb935"
+        },
+        {
+            "path": "R/utils.R",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "1a75b8471b58faeae364b4005d90af37c0966d7c",
+            "size": 1734,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/1a75b8471b58faeae364b4005d90af37c0966d7c"
+        },
+        {
+            "path": "R/zzz.R",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "f9c19a977e4f37e19c349af0ae9a2671009e7969",
+            "size": 1448,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/f9c19a977e4f37e19c349af0ae9a2671009e7969"
+        },
+        {
+            "path": "README.md",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "6f61c3366fa5ec5f701f2d64350acfea5f98eecb",
+            "size": 3088,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/6f61c3366fa5ec5f701f2d64350acfea5f98eecb"
+        },
+        {
+            "path": "docs",
+            "mode": "040000",
+            "type": "tree",
+            "sha": "ff0dba39f3d17db2b59701da26ba4b494d7644c8",
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/trees/ff0dba39f3d17db2b59701da26ba4b494d7644c8"
+        },
+        {
+            "path": "docs/404.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "c39aa20233089e0c031cd3faa8fc0e5bdff543a7",
+            "size": 6251,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/c39aa20233089e0c031cd3faa8fc0e5bdff543a7"
+        },
+        {
+            "path": "docs/LICENSE-text.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "df26f59b4f6ba4cac55859db2ec3b8235ab8a8dd",
+            "size": 6272,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/df26f59b4f6ba4cac55859db2ec3b8235ab8a8dd"
+        },
+        {
+            "path": "docs/apple-touch-icon-120x120.png",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "d6fe91901a55833c4431c787820f000af8d55b99",
+            "size": 13929,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/d6fe91901a55833c4431c787820f000af8d55b99"
+        },
+        {
+            "path": "docs/apple-touch-icon-152x152.png",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "106e22301a706077d6aa92db48f598b583841e5a",
+            "size": 18586,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/106e22301a706077d6aa92db48f598b583841e5a"
+        },
+        {
+            "path": "docs/apple-touch-icon-180x180.png",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "572031b16fc0442245a4bd1c3f99d4b36b21bec2",
+            "size": 22470,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/572031b16fc0442245a4bd1c3f99d4b36b21bec2"
+        },
+        {
+            "path": "docs/apple-touch-icon-60x60.png",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "6143b1a86a19fe90b26e0987682b10a9f4b9fa40",
+            "size": 5674,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/6143b1a86a19fe90b26e0987682b10a9f4b9fa40"
+        },
+        {
+            "path": "docs/apple-touch-icon-76x76.png",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "c9d4db18aa3f36177e4ff8b82a4a194947bc9cd9",
+            "size": 7879,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/c9d4db18aa3f36177e4ff8b82a4a194947bc9cd9"
+        },
+        {
+            "path": "docs/apple-touch-icon.png",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "80cd793f2af56450d9a0fdedb809e7bc0f2ca426",
+            "size": 22470,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/80cd793f2af56450d9a0fdedb809e7bc0f2ca426"
+        },
+        {
+            "path": "docs/authors.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "329dfdbe26c912f0018fb6668466a9f56bbae26a",
+            "size": 7128,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/329dfdbe26c912f0018fb6668466a9f56bbae26a"
+        },
+        {
+            "path": "docs/bootstrap-toc.css",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "5a859415c1f7eacfd94920968bc910e2f1f1427e",
+            "size": 1843,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/5a859415c1f7eacfd94920968bc910e2f1f1427e"
+        },
+        {
+            "path": "docs/bootstrap-toc.js",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "1cdd573b20f53b3ebe31c021e154c4338ca456af",
+            "size": 4764,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/1cdd573b20f53b3ebe31c021e154c4338ca456af"
+        },
+        {
+            "path": "docs/deps",
+            "mode": "040000",
+            "type": "tree",
+            "sha": "91b9a7576d618c14a9522e4b2445f1d48e1d9915",
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/trees/91b9a7576d618c14a9522e4b2445f1d48e1d9915"
+        },
+        {
+            "path": "docs/deps/bootstrap-5.1.3",
+            "mode": "040000",
+            "type": "tree",
+            "sha": "e8c86694077fa134c519f2c35b918e79278a0961",
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/trees/e8c86694077fa134c519f2c35b918e79278a0961"
+        },
+        {
+            "path": "docs/deps/bootstrap-5.1.3/bootstrap.bundle.min.js",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "cc0a25561dfb616832227c9e2b2c1b1bbe69bc05",
+            "size": 78129,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/cc0a25561dfb616832227c9e2b2c1b1bbe69bc05"
+        },
+        {
+            "path": "docs/deps/bootstrap-5.1.3/bootstrap.bundle.min.js.map",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "7d78e32a669415c9d55382bd64063bedfe743f17",
+            "size": 331017,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/7d78e32a669415c9d55382bd64063bedfe743f17"
+        },
+        {
+            "path": "docs/deps/bootstrap-5.1.3/bootstrap.min.css",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "9b0629582f1cfee7df8bef4f8f527286a99c861b",
+            "size": 184921,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/9b0629582f1cfee7df8bef4f8f527286a99c861b"
+        },
+        {
+            "path": "docs/deps/data-deps.txt",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "cd52e3369911dc16c86944da325e21ea4dc40701",
+            "size": 292,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/cd52e3369911dc16c86944da325e21ea4dc40701"
+        },
+        {
+            "path": "docs/deps/jquery-3.6.0",
+            "mode": "040000",
+            "type": "tree",
+            "sha": "a8b7b34cb8b9a47f348b319c079d4f7874e366f4",
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/trees/a8b7b34cb8b9a47f348b319c079d4f7874e366f4"
+        },
+        {
+            "path": "docs/deps/jquery-3.6.0/jquery-3.6.0.js",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "fc6c299b73e792ef288e785c22393a5df9dded4b",
+            "size": 288580,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/fc6c299b73e792ef288e785c22393a5df9dded4b"
+        },
+        {
+            "path": "docs/deps/jquery-3.6.0/jquery-3.6.0.min.js",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "c4c6022f2982e8dae64cebd6b9a2b59f2547faad",
+            "size": 89501,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/c4c6022f2982e8dae64cebd6b9a2b59f2547faad"
+        },
+        {
+            "path": "docs/deps/jquery-3.6.0/jquery-3.6.0.min.map",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "7d86eb1694970141b88b52f5b26e6b019f16b590",
+            "size": 137972,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/7d86eb1694970141b88b52f5b26e6b019f16b590"
+        },
+        {
+            "path": "docs/docsearch.css",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "e5f1fe1dfa2c34c51fe941829b511acd8c763301",
+            "size": 11758,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/e5f1fe1dfa2c34c51fe941829b511acd8c763301"
+        },
+        {
+            "path": "docs/docsearch.js",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "b35504cd3a282816130a16881f3ebeead9c1bcb4",
+            "size": 2018,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/b35504cd3a282816130a16881f3ebeead9c1bcb4"
+        },
+        {
+            "path": "docs/extra.css",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "fd1d04642309e2024693cef01db009edb32ca74a",
+            "size": 1080,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/fd1d04642309e2024693cef01db009edb32ca74a"
+        },
+        {
+            "path": "docs/favicon-16x16.png",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "06eb4b1c1e3cc8b447e7b46ddf7afbe2f08b8107",
+            "size": 1199,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/06eb4b1c1e3cc8b447e7b46ddf7afbe2f08b8107"
+        },
+        {
+            "path": "docs/favicon-32x32.png",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "f58dc1e19a082665c67fb33faa8b4007a1d05f59",
+            "size": 2453,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/f58dc1e19a082665c67fb33faa8b4007a1d05f59"
+        },
+        {
+            "path": "docs/favicon.ico",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "8685f9911f19d72e50b9686e6660e15878da406c",
+            "size": 15086,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/8685f9911f19d72e50b9686e6660e15878da406c"
+        },
+        {
+            "path": "docs/index.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "663c507284b5c30cf70e7160197fb3e0b5d039fd",
+            "size": 15821,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/663c507284b5c30cf70e7160197fb3e0b5d039fd"
+        },
+        {
+            "path": "docs/link.svg",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "88ad82769b87f10725c57dca6fcf41b4bffe462c",
+            "size": 810,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/88ad82769b87f10725c57dca6fcf41b4bffe462c"
+        },
+        {
+            "path": "docs/logo.svg",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "63d1282673a11e762f09ea8b801267d109252d99",
+            "size": 31384,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/63d1282673a11e762f09ea8b801267d109252d99"
+        },
+        {
+            "path": "docs/pkgdown.css",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "80ea5b838a4d8f24ae023bbf3582a8079aadbf66",
+            "size": 7308,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/80ea5b838a4d8f24ae023bbf3582a8079aadbf66"
+        },
+        {
+            "path": "docs/pkgdown.js",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "52afcee4a3c66de89c0a97ab0598f51088bd3ea4",
+            "size": 4355,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/52afcee4a3c66de89c0a97ab0598f51088bd3ea4"
+        },
+        {
+            "path": "docs/pkgdown.yml",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "f19613e614e3c4373a8a90518a2df80e439ab8b9",
+            "size": 89,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/f19613e614e3c4373a8a90518a2df80e439ab8b9"
+        },
+        {
+            "path": "docs/reference",
+            "mode": "040000",
+            "type": "tree",
+            "sha": "c33452885bb38ddf0d19d9b0afec4d68ae605039",
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/trees/c33452885bb38ddf0d19d9b0afec4d68ae605039"
+        },
+        {
+            "path": "docs/reference/catch.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "848ac10cbab2bc01671f2e9f16ea6fae05608795",
+            "size": 7691,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/848ac10cbab2bc01671f2e9f16ea6fae05608795"
+        },
+        {
+            "path": "docs/reference/check_known_packages.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "eb3fdff87b80f2548fe3680eb9c1bc36e9915f9e",
+            "size": 8263,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/eb3fdff87b80f2548fe3680eb9c1bc36e9915f9e"
+        },
+        {
+            "path": "docs/reference/check_known_repos.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "4d2fe91f9d6c9f71f5265163ec60962a82c446f5",
+            "size": 8464,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/4d2fe91f9d6c9f71f5265163ec60962a82c446f5"
+        },
+        {
+            "path": "docs/reference/clean_repo_links.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "062a6991d7ea274cff1c65b6210de6dcd932aecc",
+            "size": 7618,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/062a6991d7ea274cff1c65b6210de6dcd932aecc"
+        },
+        {
+            "path": "docs/reference/crop_image.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "f763f63207f0fdeb1d1782426833be05d9c7a69d",
+            "size": 7511,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/f763f63207f0fdeb1d1782426833be05d9c7a69d"
+        },
+        {
+            "path": "docs/reference/download_logo.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "9e8209e192627929d6d8dc11823eaaed16eb6fb9",
+            "size": 8026,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/9e8209e192627929d6d8dc11823eaaed16eb6fb9"
+        },
+        {
+            "path": "docs/reference/figures",
+            "mode": "040000",
+            "type": "tree",
+            "sha": "5cc0953629966b3137434f7d5920343dfb7b4f5c",
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/trees/5cc0953629966b3137434f7d5920343dfb7b4f5c"
+        },
+        {
+            "path": "docs/reference/figures/logo.svg",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "63d1282673a11e762f09ea8b801267d109252d99",
+            "size": 31384,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/63d1282673a11e762f09ea8b801267d109252d99"
+        },
+        {
+            "path": "docs/reference/find_hex.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "62710ba290713cf9525e8d4eb0f4176a47784699",
+            "size": 8733,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/62710ba290713cf9525e8d4eb0f4176a47784699"
+        },
+        {
+            "path": "docs/reference/generate_hex.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "371e1fae51c823c5e1cefaa39bc4d06382edc1b6",
+            "size": 8729,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/371e1fae51c823c5e1cefaa39bc4d06382edc1b6"
+        },
+        {
+            "path": "docs/reference/get_best_image.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "4331effbc230f7bde51fa2f21b36d9c189911895",
+            "size": 7839,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/4331effbc230f7bde51fa2f21b36d9c189911895"
+        },
+        {
+            "path": "docs/reference/get_cran_info.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "f8b09a495389041c3ab4917de5272fdbfba7db19",
+            "size": 7664,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/f8b09a495389041c3ab4917de5272fdbfba7db19"
+        },
+        {
+            "path": "docs/reference/get_endpoint_content.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "e67bef9db6d0852c33b333a6f1ec99124cf1cb34",
+            "size": 8613,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/e67bef9db6d0852c33b333a6f1ec99124cf1cb34"
+        },
+        {
+            "path": "docs/reference/get_metacran_info.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "20c493f26c36b410c657e8a1e6186564cf97d72f",
+            "size": 7711,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/20c493f26c36b410c657e8a1e6186564cf97d72f"
+        },
+        {
+            "path": "docs/reference/get_possible_paths.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "f292f4a2141dfbcbc6327ed8c9cfbc8d7e245b2d",
+            "size": 8264,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/f292f4a2141dfbcbc6327ed8c9cfbc8d7e245b2d"
+        },
+        {
+            "path": "docs/reference/index.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "da65a5c36e7f0ce0a927096e9f7f2e6eb01f15f8",
+            "size": 10724,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/da65a5c36e7f0ce0a927096e9f7f2e6eb01f15f8"
+        },
+        {
+            "path": "docs/reference/keep_good_ratio_images.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "1cec75643bf89c4c59ac13f9d6f4d27bace9b7c5",
+            "size": 7958,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/1cec75643bf89c4c59ac13f9d6f4d27bace9b7c5"
+        },
+        {
+            "path": "docs/reference/locate_repo.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "1747096b5129e065fd926338d0e12c15a2053026",
+            "size": 8182,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/1747096b5129e065fd926338d0e12c15a2053026"
+        },
+        {
+            "path": "docs/reference/log.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "24573401963211fd04c28c644eff12332d79475b",
+            "size": 7392,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/24573401963211fd04c28c644eff12332d79475b"
+        },
+        {
+            "path": "docs/reference/scavenge.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "81694235383659daf48cf5563be072550cccc08c",
+            "size": 7566,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/81694235383659daf48cf5563be072550cccc08c"
+        },
+        {
+            "path": "docs/reference/search_repo_logo.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "caad28a439c68468f8ff4d14f39bf736e4a522c6",
+            "size": 9133,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/caad28a439c68468f8ff4d14f39bf736e4a522c6"
+        },
+        {
+            "path": "docs/reference/url_file_exists.html",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "58e59314641d9c10bc490fdcbbb59fb5b44f7520",
+            "size": 7758,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/58e59314641d9c10bc490fdcbbb59fb5b44f7520"
+        },
+        {
+            "path": "docs/search.json",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "56c95a57c7c45e11be8678fb2a3b14ff9d599119",
+            "size": 26514,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/56c95a57c7c45e11be8678fb2a3b14ff9d599119"
+        },
+        {
+            "path": "docs/sitemap.xml",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "ba66ed42da82c5f1851d08bb845f6111a00b00dd",
+            "size": 1536,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/ba66ed42da82c5f1851d08bb845f6111a00b00dd"
+        },
+        {
+            "path": "hexFinder.Rproj",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "497f8bfcfb9d13ad61d14d79963641e9aeab41b0",
+            "size": 356,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/497f8bfcfb9d13ad61d14d79963641e9aeab41b0"
+        },
+        {
+            "path": "inst",
+            "mode": "040000",
+            "type": "tree",
+            "sha": "ff2e1ce1d5ef8bc16d843a4c71c3850ed262c490",
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/trees/ff2e1ce1d5ef8bc16d843a4c71c3850ed262c490"
+        },
+        {
+            "path": "inst/ascii.txt",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "0419b14d6417593dca879add6a539368adcf9e45",
+            "size": 101,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/0419b14d6417593dca879add6a539368adcf9e45"
+        },
+        {
+            "path": "man",
+            "mode": "040000",
+            "type": "tree",
+            "sha": "ca068ab07579108907fcdc9c8581f5466284c380",
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/trees/ca068ab07579108907fcdc9c8581f5466284c380"
+        },
+        {
+            "path": "man/catch.Rd",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "1d70bcb5fb6a8a9964707be396c26ab8e9753095",
+            "size": 456,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/1d70bcb5fb6a8a9964707be396c26ab8e9753095"
+        },
+        {
+            "path": "man/check_known_packages.Rd",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "38801f6b12c174c2744ab3fdb8e8a92c9236911c",
+            "size": 719,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/38801f6b12c174c2744ab3fdb8e8a92c9236911c"
+        },
+        {
+            "path": "man/check_known_repos.Rd",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "e9d6c6172f7cce0420291e6cfbb240e6d905cbd8",
+            "size": 817,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/e9d6c6172f7cce0420291e6cfbb240e6d905cbd8"
+        },
+        {
+            "path": "man/clean_repo_links.Rd",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "1a67905b4ea81e14eb6231cfc935c5eaaa8739e4",
+            "size": 444,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/1a67905b4ea81e14eb6231cfc935c5eaaa8739e4"
+        },
+        {
+            "path": "man/crop_image.Rd",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "7e2218f036c7618410d935dbbcdb3fc5d76c05cc",
+            "size": 385,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/7e2218f036c7618410d935dbbcdb3fc5d76c05cc"
+        },
+        {
+            "path": "man/download_logo.Rd",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "9c6126737874de77ec16f9ef0fc91bc1d737686e",
+            "size": 656,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/9c6126737874de77ec16f9ef0fc91bc1d737686e"
+        },
+        {
+            "path": "man/figures",
+            "mode": "040000",
+            "type": "tree",
+            "sha": "5cc0953629966b3137434f7d5920343dfb7b4f5c",
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/trees/5cc0953629966b3137434f7d5920343dfb7b4f5c"
+        },
+        {
+            "path": "man/figures/logo.svg",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "63d1282673a11e762f09ea8b801267d109252d99",
+            "size": 31384,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/63d1282673a11e762f09ea8b801267d109252d99"
+        },
+        {
+            "path": "man/find_hex.Rd",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "1536a1f69fc03280a8252626e17349f2edb45f2f",
+            "size": 1190,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/1536a1f69fc03280a8252626e17349f2edb45f2f"
+        },
+        {
+            "path": "man/generate_hex.Rd",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "4560765f49500815158fa8a0a1ba7e25ecb6e9b4",
+            "size": 938,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/4560765f49500815158fa8a0a1ba7e25ecb6e9b4"
+        },
+        {
+            "path": "man/get_best_image.Rd",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "802ed04e6b5ab2f471dd60ac888435366598c67f",
+            "size": 548,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/802ed04e6b5ab2f471dd60ac888435366598c67f"
+        },
+        {
+            "path": "man/get_cran_info.Rd",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "63dea0caaf4efaf176d2b4a168fb3a8a169aeba2",
+            "size": 486,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/63dea0caaf4efaf176d2b4a168fb3a8a169aeba2"
+        },
+        {
+            "path": "man/get_endpoint_content.Rd",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "9d07f82d834402f0c1e3c2cc70f2ddf1a51b68ab",
+            "size": 824,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/9d07f82d834402f0c1e3c2cc70f2ddf1a51b68ab"
+        },
+        {
+            "path": "man/get_metacran_info.Rd",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "d3c8a2fef56ebdcb3c23214e166ead94e2e3666c",
+            "size": 513,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/d3c8a2fef56ebdcb3c23214e166ead94e2e3666c"
+        },
+        {
+            "path": "man/get_possible_paths.Rd",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "91f46c26714e7433ff5f4c49b417670e4e97ce35",
+            "size": 900,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/91f46c26714e7433ff5f4c49b417670e4e97ce35"
+        },
+        {
+            "path": "man/keep_good_ratio_images.Rd",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "d588df1aa5051d6f841d653f5e7c7ee1a745e9f7",
+            "size": 604,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/d588df1aa5051d6f841d653f5e7c7ee1a745e9f7"
+        },
+        {
+            "path": "man/locate_repo.Rd",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "e2ab310a0f2f8bbc9df0d15adc8c6acb5688dd25",
+            "size": 640,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/e2ab310a0f2f8bbc9df0d15adc8c6acb5688dd25"
+        },
+        {
+            "path": "man/log.Rd",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "abd2ef60bddb73c5d7493f0b968bb5c5e31225d8",
+            "size": 323,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/abd2ef60bddb73c5d7493f0b968bb5c5e31225d8"
+        },
+        {
+            "path": "man/scavenge.Rd",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "75c0ee6020fd9f9e6bd215c729408599c5ed911a",
+            "size": 412,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/75c0ee6020fd9f9e6bd215c729408599c5ed911a"
+        },
+        {
+            "path": "man/search_repo_logo.Rd",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "afc78da171a0ddd67740154e17206a4c1e106958",
+            "size": 1209,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/afc78da171a0ddd67740154e17206a4c1e106958"
+        },
+        {
+            "path": "man/url_file_exists.Rd",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "17c7095df46d337bf318ace88af8fa81950c86be",
+            "size": 515,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/17c7095df46d337bf318ace88af8fa81950c86be"
+        },
+        {
+            "path": "pkgdown",
+            "mode": "040000",
+            "type": "tree",
+            "sha": "0628ff4819df7d9b1dcaba59ff0fcd15607b5741",
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/trees/0628ff4819df7d9b1dcaba59ff0fcd15607b5741"
+        },
+        {
+            "path": "pkgdown/_pkgdown.yml",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "454388537a0e7e6081c2cc8054fa153fbbb99ff9",
+            "size": 1041,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/454388537a0e7e6081c2cc8054fa153fbbb99ff9"
+        },
+        {
+            "path": "pkgdown/extra.css",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "fd1d04642309e2024693cef01db009edb32ca74a",
+            "size": 1080,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/fd1d04642309e2024693cef01db009edb32ca74a"
+        },
+        {
+            "path": "pkgdown/favicon",
+            "mode": "040000",
+            "type": "tree",
+            "sha": "275fa262752168b5e29b49daa76b0931a538962a",
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/trees/275fa262752168b5e29b49daa76b0931a538962a"
+        },
+        {
+            "path": "pkgdown/favicon/apple-touch-icon-120x120.png",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "d6fe91901a55833c4431c787820f000af8d55b99",
+            "size": 13929,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/d6fe91901a55833c4431c787820f000af8d55b99"
+        },
+        {
+            "path": "pkgdown/favicon/apple-touch-icon-152x152.png",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "106e22301a706077d6aa92db48f598b583841e5a",
+            "size": 18586,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/106e22301a706077d6aa92db48f598b583841e5a"
+        },
+        {
+            "path": "pkgdown/favicon/apple-touch-icon-180x180.png",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "572031b16fc0442245a4bd1c3f99d4b36b21bec2",
+            "size": 22470,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/572031b16fc0442245a4bd1c3f99d4b36b21bec2"
+        },
+        {
+            "path": "pkgdown/favicon/apple-touch-icon-60x60.png",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "6143b1a86a19fe90b26e0987682b10a9f4b9fa40",
+            "size": 5674,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/6143b1a86a19fe90b26e0987682b10a9f4b9fa40"
+        },
+        {
+            "path": "pkgdown/favicon/apple-touch-icon-76x76.png",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "c9d4db18aa3f36177e4ff8b82a4a194947bc9cd9",
+            "size": 7879,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/c9d4db18aa3f36177e4ff8b82a4a194947bc9cd9"
+        },
+        {
+            "path": "pkgdown/favicon/apple-touch-icon.png",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "80cd793f2af56450d9a0fdedb809e7bc0f2ca426",
+            "size": 22470,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/80cd793f2af56450d9a0fdedb809e7bc0f2ca426"
+        },
+        {
+            "path": "pkgdown/favicon/favicon-16x16.png",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "06eb4b1c1e3cc8b447e7b46ddf7afbe2f08b8107",
+            "size": 1199,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/06eb4b1c1e3cc8b447e7b46ddf7afbe2f08b8107"
+        },
+        {
+            "path": "pkgdown/favicon/favicon-32x32.png",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "f58dc1e19a082665c67fb33faa8b4007a1d05f59",
+            "size": 2453,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/f58dc1e19a082665c67fb33faa8b4007a1d05f59"
+        },
+        {
+            "path": "pkgdown/favicon/favicon.ico",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "8685f9911f19d72e50b9686e6660e15878da406c",
+            "size": 15086,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/8685f9911f19d72e50b9686e6660e15878da406c"
+        },
+        {
+            "path": "tests",
+            "mode": "040000",
+            "type": "tree",
+            "sha": "681a2493fef00349509e052cf8058bfb6cc89edc",
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/trees/681a2493fef00349509e052cf8058bfb6cc89edc"
+        },
+        {
+            "path": "tests/testthat.R",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "269cdee9cb64f0c9347ec2077535df3addc9059d",
+            "size": 62,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/269cdee9cb64f0c9347ec2077535df3addc9059d"
+        },
+        {
+            "path": "tests/testthat",
+            "mode": "040000",
+            "type": "tree",
+            "sha": "a79875b794e47a73f501ac8a4f6dbb0b115f46f1",
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/trees/a79875b794e47a73f501ac8a4f6dbb0b115f46f1"
+        },
+        {
+            "path": "tests/testthat/test-gather.R",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "f266003443a5bda12b0d9e1df4c5a8eeabd68f9a",
+            "size": 3352,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/f266003443a5bda12b0d9e1df4c5a8eeabd68f9a"
+        }
+    ],
+    "truncated": false
+}

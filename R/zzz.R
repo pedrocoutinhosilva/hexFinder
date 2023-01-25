@@ -20,7 +20,7 @@ if (getRversion() >= "2.15.1")  utils::globalVariables(c("."))
     "shinyAce",
     "Rlogo",
     "r_logo"
-  )
+  ) |> paste0(collapse = "|")
 
   # Some packages logos are not stored in traditional ways.
   # Links to those are stored manually

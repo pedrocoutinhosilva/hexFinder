@@ -69,7 +69,7 @@ Set up github_pat enviromental variable if you plan to query multiple repos in a
 Downloaded from GitHub repo hex for devtools
 [1] "output/devtools.svg"
 ```
-This limit is tipically on a problem (Its around 50 requests per hour), but if you are planning to do a large amount of searches, you can set up a `github_pat` enviromental variable using a .Renv file or calling `Sys.setenv()`:
+This limit is tipically on a problem (Its around 50 requests per hour), but if you are planning to do a large amount of searches, you can set up a `github_pat` enviromental variable using a .Renviron file or calling `Sys.setenv()`:
 ```R
 Sys.setenv(github_pat = "your_personal_access_token")
 ```
