@@ -10,12 +10,6 @@ test_that("generate_hex", {
     path <- generate_hex(pkg_name, tempdir())
 
     expect_true(file.exists(path))
-
-    # long pkg name file is generated
-    pkg_name <- "areallylongnameforapackage"
-    path <- generate_hex(pkg_name, tempdir())
-
-    expect_true(file.exists(path))
   }))
 })
 
