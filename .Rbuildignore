@@ -7,3 +7,5 @@
 .github
 .covrignore
 .env
+^CRAN-SUBMISSION$
+^cran-comments\.md$

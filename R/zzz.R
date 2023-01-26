@@ -39,7 +39,7 @@ if (getRversion() >= "2.15.1")  utils::globalVariables(c("."))
   options(hexFinder.logo_patterns = logo_patterns)
   options(hexFinder.ignore_patterns = ignore_patterns)
   options(hexFinder.known_packages = known_packages)
-  options(hexFinder.known_packages = known_repos)
+  options(hexFinder.known_repos = known_repos)
 
   options(hexFinder.pat_warning_first_time = TRUE)
 }
