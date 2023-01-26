@@ -15,7 +15,7 @@ Scavenge the web for possible hex logos for CRAN packages.
 ###### 1 - Install the package:
 
 ```R
-# Or the most recent development version from github:
+# Most recent development version from github:
 devtools::install_github('pedrocoutinhosilva/hexFinder')
 ```
 
@@ -43,7 +43,7 @@ No logo found, generated hex for notapackage
 [1] "output/notapackage.svg"
 ```
 
-As an alternative, you can also use the `scavenge()` function. It is functionaly the same as `find_hex()`, but with extra racoons:
+As an alternative, you can also use the `scavenge()` function. It is functionality the same as `find_hex()`, but with extra raccoons:
 ```R
 > scavenge("rlang", "output")
 Summoning racoons to help with the search...
@@ -63,16 +63,16 @@ The Github API used by this package does have some limits. The first time in a s
 > find_hex("devtools", "output")
 No github personal access token provided.
 Limited search rates for github will apply.
-Set up github_pat enviromental variable if you plan to query multiple repos in a short time
+Set up github_pat global variable if you plan to query multiple repos in a short time
 Downloaded from GitHub repo hex for devtools
 [1] "output/devtools.svg"
 ```
-This limit is tipically on a problem (Its around 50 requests per hour), but if you are planning to do a large amount of searches, you can set up a `github_pat` enviromental variable using a .Renviron file or calling `Sys.setenv()`:
+This limit is normally not a problem (Its around 50 requests per hour), but if you are planning to do a large amount of searches, you can set up a `github_pat` global variable using a .Renviron file or calling `Sys.setenv()`:
 ```R
 Sys.setenv(github_pat = "your_personal_access_token")
 ```
 
-Mre information on how to get a github personal access token, at https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token.
+More information on how to get a github personal access token, at https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token.
 
 ## Documentation
 

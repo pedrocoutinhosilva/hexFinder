@@ -1,4 +1,4 @@
-#' Seaches a list of known package hex links for a given package name
+#' Searches a list of known package hex links for a given package name
 #'
 #' @description
 #' Some packages have logos but are not tied to CRAN in any way. These are
@@ -24,7 +24,7 @@ check_known_packages <- function(pkg_name,
   return(NULL)
 }
 
-#' Seaches a list of known package hex curated lists for a given package name
+#' Searches a list of known package hex curated lists for a given package name
 #'
 #' @description
 #' Some packages have logos already in curated repositories. This avoids

@@ -2,7 +2,7 @@
 % Please edit documentation in R/locate.R
 \name{check_known_repos}
 \alias{check_known_repos}
-\title{Seaches a list of known package hex curated lists for a given package name}
+\title{Searches a list of known package hex curated lists for a given package name}
 \usage{
 check_known_repos(pkg_name, known_repos = getOption("hexFinder.known_repos"))
 }

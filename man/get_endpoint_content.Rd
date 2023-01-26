@@ -3,7 +3,7 @@
 \name{get_endpoint_content}
 \alias{get_endpoint_content}
 \title{Fetch the content of a endpoint. Multiple branches can be given, the content
-returned will also include wich was the valid branch.}
+returned will also include which was the valid branch.}
 \usage{
 get_endpoint_content(endpoint, branchs = c("master", "main"), token = "")
 }
@@ -12,14 +12,14 @@ get_endpoint_content(endpoint, branchs = c("master", "main"), token = "")
 
 \item{branchs}{The branches to search. Defaults to main and master.}
 
-\item{token}{A github personal access token. Defaults to the enviromental.}
+\item{token}{A github personal access token. Defaults to none.}
 }
 \value{
 A named list with the branch name and the repo content
 }
 \description{
 Fetch the content of a endpoint. Multiple branches can be given, the content
-returned will also include wich was the valid branch.
+returned will also include which was the valid branch.
 }
 \keyword{gather}
 \keyword{internal}

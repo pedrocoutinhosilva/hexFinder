@@ -14,7 +14,7 @@ get_possible_paths(content, logo_patterns, ignore_patterns, pkg_name = "")
 
 \item{ignore_patterns}{A regex string of patterns to ignore.}
 
-\item{pkg_name}{AName of the package to find logos for.}
+\item{pkg_name}{A Name of the package to find logos for.}
 }
 \value{
 A list of paths that match the given patterns

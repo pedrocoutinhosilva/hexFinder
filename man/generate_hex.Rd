@@ -28,7 +28,7 @@ The path to the generated logo image.
 }
 \description{
 Generates a generic logo for a package. IF the package is not on CRAN, a
-  diferent set of colors is used.
+  different set of colors is used.
 }
 \keyword{images}
 \keyword{internal}

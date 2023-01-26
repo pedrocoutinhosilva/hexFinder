@@ -20,7 +20,7 @@ packages to find hexes for.}
 
 \item{repo}{The repo to use to find the package logo. If none is
 provided, it will try to find one based on CRAN meta information.
-Useful when we want to minimise API calls to CRAN.}
+Useful when we want to minimize API calls to CRAN.}
 
 \item{skip_known_logos}{Some logos are sourced from known repos or urls.
 If set to TRUE, those locations will be skipped. Useful if you are getting

@@ -17,12 +17,12 @@ search_repo_logo(
 
 \item{repository}{The github repository to search in.}
 
-\item{token}{A github personal access token. Defaults to the enviromental
+\item{token}{A github personal access token.
 variable github_pat. If that variable is not set, you might run into API
 limits when running too many queries.}
 
-\item{logo_patterns}{String of valid name.extention file names for files to
-look for, seperated by |. {pkg_name} Can be used as a placeholder for
+\item{logo_patterns}{String of valid name.extension file names for files to
+look for, separated by |. {pkg_name} Can be used as a placeholder for
 the package name.}
 
 \item{ignore_patterns}{String of patterns to ignore when looking for a valid

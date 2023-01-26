@@ -2,7 +2,7 @@
 % Please edit documentation in R/locate.R
 \name{check_known_packages}
 \alias{check_known_packages}
-\title{Seaches a list of known package hex links for a given package name}
+\title{Searches a list of known package hex links for a given package name}
 \usage{
 check_known_packages(
   pkg_name,

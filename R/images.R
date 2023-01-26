@@ -2,7 +2,7 @@
 #'
 #' @description
 #' Generates a generic logo for a package. IF the package is not on CRAN, a
-#'   diferent set of colors is used.
+#'   different set of colors is used.
 #'
 #' @param name The package to generate the logo for.
 #' @param output the path to store the generated logo at.
@@ -71,7 +71,7 @@ crop_image <- function(path) {
   original_info <- image_info(original)
   trimmed_info <- image_info(trimmed)
 
-  # if diferent size, crop it
+  # if different size, crop it
   if (!identical(original_info$width, trimmed_info$width) ||
       !identical(original_info$height, trimmed_info$height)) {
     image_write(trimmed, path)

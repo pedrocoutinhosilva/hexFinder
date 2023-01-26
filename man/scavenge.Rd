@@ -2,7 +2,7 @@
 % Please edit documentation in R/scavenge.R
 \name{scavenge}
 \alias{scavenge}
-\title{Same as [find_hex], but with extra Raccons}
+\title{Same as [find_hex], but with extra raccoons}
 \usage{
 scavenge(...)
 }
@@ -13,7 +13,7 @@ scavenge(...)
 No return, called for side effects.
 }
 \description{
-Same as [find_hex], but with extra Raccons
+Same as [find_hex], but with extra raccoons
 }
 \keyword{external}
 \keyword{finder}

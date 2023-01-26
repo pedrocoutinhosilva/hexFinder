@@ -30,11 +30,11 @@ get_metacran_info <- function(pkg_name) {
 }
 
 #' Fetch the content of a endpoint. Multiple branches can be given, the content
-#' returned will also include wich was the valid branch.
+#' returned will also include which was the valid branch.
 #'
 #' @param endpoint The github endpoint to search.
 #' @param branchs The branches to search. Defaults to main and master.
-#' @param token A github personal access token. Defaults to the enviromental.
+#' @param token A github personal access token. Defaults to none.
 #'
 #' @importFrom glue glue
 #' @importFrom httr2 request req_perform req_headers resp_body_json
@@ -98,7 +98,7 @@ get_endpoint_content <- function(endpoint,
 #' @param content The result of calling get_endpoint_content() on a github repo.
 #' @param ignore_patterns A regex string of patterns to ignore.
 #' @param logo_patterns A regex string of patterns to accept.
-#' @param pkg_name AName of the package to find logos for.
+#' @param pkg_name A Name of the package to find logos for.
 #'
 #' @importFrom glue glue
 #'
@@ -219,11 +219,11 @@ keep_good_ratio_images <- function(paths, download_endpoint, branch) {
 #'
 #' @param pkg_name The mane of the package we want the logo for.
 #' @param repository The github repository to search in.
-#' @param token A github personal access token. Defaults to the enviromental
+#' @param token A github personal access token.
 #'   variable github_pat. If that variable is not set, you might run into API
 #'   limits when running too many queries.
-#' @param logo_patterns String of valid name.extention file names for files to
-#'   look for, seperated by |. {pkg_name} Can be used as a placeholder for
+#' @param logo_patterns String of valid name.extension file names for files to
+#'   look for, separated by |. {pkg_name} Can be used as a placeholder for
 #'   the package name.
 #' @param ignore_patterns String of patterns to ignore when looking for a valid
 #'   logo. Can be part of the filename or part of the file path.
@@ -246,7 +246,7 @@ search_repo_logo <- function(pkg_name,
   if (token == "" && getOption("hexFinder.pat_warning_first_time")) {
     log("No github personal access token provided.") #nocov
     log("Limited search rates for github will apply.") #nocov
-    log("Set up github_pat enviromental variable if you plan to query multiple repos in a short time") #nolint #nocov
+    log("Set up github_pat environmental variable if you plan to query multiple repos in a short time") #nolint #nocov
 
     options(hexFinder.pat_warning_first_time = FALSE) #nocov
   }
