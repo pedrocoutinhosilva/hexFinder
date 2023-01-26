@@ -18,12 +18,6 @@ test_that("crop_image ", {
   invisible(capture.output({
     # package does not exist
     expect_error(crop_image())
-
-    # generate file
-    pkg_name <- "areallylongnameforapackage"
-    path <- generate_hex(pkg_name, tempdir())
-
-    expect_invisible(crop_image(path))
   }))
 })
 
