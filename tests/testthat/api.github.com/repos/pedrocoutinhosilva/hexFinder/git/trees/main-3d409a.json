@@ -1,6 +1,6 @@
 {
-    "sha": "9d988a6cf6a046172218a0cac49e29551290bfd7",
-    "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/trees/9d988a6cf6a046172218a0cac49e29551290bfd7",
+    "sha": "896a3944fe5d1ce6affae75ccff42068bc0a073c",
+    "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/trees/896a3944fe5d1ce6affae75ccff42068bc0a073c",
     "tree": [
         {
             "path": ".Rbuildignore",
@@ -9,6 +9,14 @@
             "sha": "7a98df8d1405cf8172d5301c223830e00d8d4255",
             "size": 68,
             "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/7a98df8d1405cf8172d5301c223830e00d8d4255"
+        },
+        {
+            "path": ".covrignore",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "544a42dd1ddbd185cdf6439fc7d0d4599aaaf8dd",
+            "size": 19,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/544a42dd1ddbd185cdf6439fc7d0d4599aaaf8dd"
         },
         {
             "path": ".gitattributes",
@@ -22,23 +30,23 @@
             "path": ".github",
             "mode": "040000",
             "type": "tree",
-            "sha": "dd32bc35233d4b08cebd6a39d497db83d517b7ee",
-            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/trees/dd32bc35233d4b08cebd6a39d497db83d517b7ee"
+            "sha": "06faf270fc2333ce4c3a0edcc1a29dd347628ca0",
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/trees/06faf270fc2333ce4c3a0edcc1a29dd347628ca0"
         },
         {
             "path": ".github/workflows",
             "mode": "040000",
             "type": "tree",
-            "sha": "8ec561000d00a6ca2d0e38a474b107f4f6956db9",
-            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/trees/8ec561000d00a6ca2d0e38a474b107f4f6956db9"
+            "sha": "b60f06baeb71439a122e0154f59706164b5e3fb4",
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/trees/b60f06baeb71439a122e0154f59706164b5e3fb4"
         },
         {
             "path": ".github/workflows/R-CMD-check.yaml",
             "mode": "100644",
             "type": "blob",
-            "sha": "03cb709ea4ab09f3a8ab155db47a64c60a548f69",
-            "size": 1015,
-            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/03cb709ea4ab09f3a8ab155db47a64c60a548f69"
+            "sha": "052a41ff63d713c31f61e17f20a091af44e39dba",
+            "size": 1016,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/052a41ff63d713c31f61e17f20a091af44e39dba"
         },
         {
             "path": ".github/workflows/deploy-docs.yaml",
@@ -52,9 +60,9 @@
             "path": ".github/workflows/test-coverage.yaml",
             "mode": "100644",
             "type": "blob",
-            "sha": "e39b1ef2627bafa5e7d881c0b54e8537a00c561c",
-            "size": 756,
-            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/e39b1ef2627bafa5e7d881c0b54e8537a00c561c"
+            "sha": "f2dc878baad9077e202c626c5590980edd642f0e",
+            "size": 757,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/f2dc878baad9077e202c626c5590980edd642f0e"
         },
         {
             "path": ".gitignore",
@@ -68,17 +76,17 @@
             "path": ".lintr",
             "mode": "100644",
             "type": "blob",
-            "sha": "2bfa97efbef3b8352779bb54814070ccf328e36d",
-            "size": 118,
-            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/2bfa97efbef3b8352779bb54814070ccf328e36d"
+            "sha": "a09ca3ebb91ba8dc685f53aef34add04cdd8a781",
+            "size": 176,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/a09ca3ebb91ba8dc685f53aef34add04cdd8a781"
         },
         {
             "path": "DESCRIPTION",
             "mode": "100644",
             "type": "blob",
-            "sha": "ecbb3e861e7d4ae8177a9270adf294105c37e98b",
-            "size": 576,
-            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/ecbb3e861e7d4ae8177a9270adf294105c37e98b"
+            "sha": "5c250c13bc2ecd92450eed7cfd8f41ad82763181",
+            "size": 577,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/5c250c13bc2ecd92450eed7cfd8f41ad82763181"
         },
         {
             "path": "LICENSE",
@@ -100,16 +108,16 @@
             "path": "R",
             "mode": "040000",
             "type": "tree",
-            "sha": "7aeb4be0200d3049d7ea15416838e9424fcd8320",
-            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/trees/7aeb4be0200d3049d7ea15416838e9424fcd8320"
+            "sha": "f15eb2dc6387285f45e5ca49a453a3b1b6f68044",
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/trees/f15eb2dc6387285f45e5ca49a453a3b1b6f68044"
         },
         {
             "path": "R/gather.R",
             "mode": "100644",
             "type": "blob",
-            "sha": "9b927da5cc03ba05df788bbc7a1b1c866b52eb14",
-            "size": 8710,
-            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/9b927da5cc03ba05df788bbc7a1b1c866b52eb14"
+            "sha": "73945e8607699b92a2b5fb844ee655c053108f4a",
+            "size": 8569,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/73945e8607699b92a2b5fb844ee655c053108f4a"
         },
         {
             "path": "R/images.R",
@@ -147,17 +155,17 @@
             "path": "R/zzz.R",
             "mode": "100644",
             "type": "blob",
-            "sha": "f9c19a977e4f37e19c349af0ae9a2671009e7969",
-            "size": 1448,
-            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/f9c19a977e4f37e19c349af0ae9a2671009e7969"
+            "sha": "a6ab5baa40acc1adbb1f3ccd9e346c11d73ee43d",
+            "size": 1474,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/a6ab5baa40acc1adbb1f3ccd9e346c11d73ee43d"
         },
         {
             "path": "README.md",
             "mode": "100644",
             "type": "blob",
-            "sha": "6f61c3366fa5ec5f701f2d64350acfea5f98eecb",
-            "size": 3088,
-            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/6f61c3366fa5ec5f701f2d64350acfea5f98eecb"
+            "sha": "f0fcaf191d96c9743ef26608a3403eba2b59e115",
+            "size": 3092,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/f0fcaf191d96c9743ef26608a3403eba2b59e115"
         },
         {
             "path": "docs",
@@ -928,8 +936,8 @@
             "path": "tests",
             "mode": "040000",
             "type": "tree",
-            "sha": "681a2493fef00349509e052cf8058bfb6cc89edc",
-            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/trees/681a2493fef00349509e052cf8058bfb6cc89edc"
+            "sha": "da6daf8eb3de12a6c9beb8d90015f804e7f8ba1d",
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/trees/da6daf8eb3de12a6c9beb8d90015f804e7f8ba1d"
         },
         {
             "path": "tests/testthat.R",
@@ -943,16 +951,143 @@
             "path": "tests/testthat",
             "mode": "040000",
             "type": "tree",
-            "sha": "a79875b794e47a73f501ac8a4f6dbb0b115f46f1",
-            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/trees/a79875b794e47a73f501ac8a4f6dbb0b115f46f1"
+            "sha": "5bab1f992ee0e532911c8c02577f5bea2abbbaf6",
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/trees/5bab1f992ee0e532911c8c02577f5bea2abbbaf6"
+        },
+        {
+            "path": "tests/testthat/api.github.com",
+            "mode": "040000",
+            "type": "tree",
+            "sha": "d898d428488d42b56d1bf702d97ab2517e07320b",
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/trees/d898d428488d42b56d1bf702d97ab2517e07320b"
+        },
+        {
+            "path": "tests/testthat/api.github.com/repos",
+            "mode": "040000",
+            "type": "tree",
+            "sha": "7d3186a401814c84b784472682672bc1b648518c",
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/trees/7d3186a401814c84b784472682672bc1b648518c"
+        },
+        {
+            "path": "tests/testthat/api.github.com/repos/pedrocoutinhosilva",
+            "mode": "040000",
+            "type": "tree",
+            "sha": "8c926e6cf753b2920ae9e0ff34fb5c77fae94782",
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/trees/8c926e6cf753b2920ae9e0ff34fb5c77fae94782"
+        },
+        {
+            "path": "tests/testthat/api.github.com/repos/pedrocoutinhosilva/hexFinder",
+            "mode": "040000",
+            "type": "tree",
+            "sha": "5e944118bb1c7a6db328f56c0577e4f747c1c352",
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/trees/5e944118bb1c7a6db328f56c0577e4f747c1c352"
+        },
+        {
+            "path": "tests/testthat/api.github.com/repos/pedrocoutinhosilva/hexFinder/git",
+            "mode": "040000",
+            "type": "tree",
+            "sha": "3f8db98759037469113f5859b0d5d8e7b67f0f4e",
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/trees/3f8db98759037469113f5859b0d5d8e7b67f0f4e"
+        },
+        {
+            "path": "tests/testthat/api.github.com/repos/pedrocoutinhosilva/hexFinder/git/trees",
+            "mode": "040000",
+            "type": "tree",
+            "sha": "8c9a59ed2bd986438114ec7100fdc37c47b6bf73",
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/trees/8c9a59ed2bd986438114ec7100fdc37c47b6bf73"
+        },
+        {
+            "path": "tests/testthat/api.github.com/repos/pedrocoutinhosilva/hexFinder/git/trees/fake-3d409a.R",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "595424af032a77d08adba9cd0f477ae87f0105b1",
+            "size": 3647,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/595424af032a77d08adba9cd0f477ae87f0105b1"
+        },
+        {
+            "path": "tests/testthat/api.github.com/repos/pedrocoutinhosilva/hexFinder/git/trees/main-3d409a.json",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "6bc40f8ea53d110d2b3001d799262cbecb8b2831",
+            "size": 41542,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/6bc40f8ea53d110d2b3001d799262cbecb8b2831"
+        },
+        {
+            "path": "tests/testthat/api.github.com/repos/pedrocoutinhosilva/hexFinder/git/trees/master-3d409a.R",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "28a43079e7161bc31922980dbd7c4b68aadde142",
+            "size": 3652,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/28a43079e7161bc31922980dbd7c4b68aadde142"
+        },
+        {
+            "path": "tests/testthat/api.github.com/repos/pedrocoutinhosilva/imola",
+            "mode": "040000",
+            "type": "tree",
+            "sha": "6b93b5d9cc66f6c437b4198ec7941042b0d0ded8",
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/trees/6b93b5d9cc66f6c437b4198ec7941042b0d0ded8"
+        },
+        {
+            "path": "tests/testthat/api.github.com/repos/pedrocoutinhosilva/imola/git",
+            "mode": "040000",
+            "type": "tree",
+            "sha": "95eef4946315fde6e5d6efdc644f32ea2a9426e8",
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/trees/95eef4946315fde6e5d6efdc644f32ea2a9426e8"
+        },
+        {
+            "path": "tests/testthat/api.github.com/repos/pedrocoutinhosilva/imola/git/trees",
+            "mode": "040000",
+            "type": "tree",
+            "sha": "2f1ee8bc4c68a2f72791ac0b71b321e9856f294c",
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/trees/2f1ee8bc4c68a2f72791ac0b71b321e9856f294c"
+        },
+        {
+            "path": "tests/testthat/api.github.com/repos/pedrocoutinhosilva/imola/git/trees/main-3d409a.R",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "ac5d20e483848ec7dfe7d41e6102cb45c425a4fb",
+            "size": 3445,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/ac5d20e483848ec7dfe7d41e6102cb45c425a4fb"
+        },
+        {
+            "path": "tests/testthat/api.github.com/repos/pedrocoutinhosilva/imola/git/trees/master-3d409a.R",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "3ef0185fd5e579db3f9fea94760343830f599ca4",
+            "size": 3451,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/3ef0185fd5e579db3f9fea94760343830f599ca4"
+        },
+        {
+            "path": "tests/testthat/setup.R",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "33d04d9c7672ffe8aaeaed435b677c6f6abbb33b",
+            "size": 17,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/33d04d9c7672ffe8aaeaed435b677c6f6abbb33b"
         },
         {
             "path": "tests/testthat/test-gather.R",
             "mode": "100644",
             "type": "blob",
-            "sha": "f266003443a5bda12b0d9e1df4c5a8eeabd68f9a",
-            "size": 3352,
-            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/f266003443a5bda12b0d9e1df4c5a8eeabd68f9a"
+            "sha": "ae680390e046d9636b9df681f71f453d51095845",
+            "size": 3777,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/ae680390e046d9636b9df681f71f453d51095845"
+        },
+        {
+            "path": "tests/testthat/test-images.R",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "32ec5cb3b28968d8674f0878c7226696af79df19",
+            "size": 996,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/32ec5cb3b28968d8674f0878c7226696af79df19"
+        },
+        {
+            "path": "tests/testthat/test-utils.R",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "179bbc6e738f7b47c6718883a2e65eb8d77e0556",
+            "size": 515,
+            "url": "https://api.github.com/repos/pedrocoutinhosilva/hexFinder/git/blobs/179bbc6e738f7b47c6718883a2e65eb8d77e0556"
         }
     ],
     "truncated": false

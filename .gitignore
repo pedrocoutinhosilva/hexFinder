@@ -3,4 +3,5 @@
 .Renviron
 .RData
 .Ruserdata
+.env
 output/

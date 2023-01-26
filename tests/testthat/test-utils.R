@@ -1,8 +1,8 @@
 # Tests for url_file_exists
 with_mock_api({
   test_that("url_file_exists", {
-    # package does not exist
-    expect_error(url_file_exists())
+    # url does not exist
+    expect_false(url_file_exists())
   })
 })
 

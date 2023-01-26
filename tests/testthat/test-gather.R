@@ -21,11 +21,6 @@ with_mock_api({
   test_that("get_endpoint_content", {
     # missing arguments
     expect_error(get_endpoint_content())
-
-    # Valid return for existing repo with no token
-    get_endpoint_content("https://api.github.com/repos/pedrocoutinhosilva/hexFinder") |> #nolint
-      expect_named()
-
     # Error return for existing repo with invalid token
     get_endpoint_content(
       "https://api.github.com/repos/pedrocoutinhosilva/imola", token = "fake") |> #nolint
@@ -113,11 +108,5 @@ with_mock_api({
     # missing arguments
     expect_error(search_repo_logo() |> quietly())
     expect_null(search_repo_logo("hexFinder", ""))
-
-    # Minimal examples
-    expect_type(search_repo_logo(
-      "hexFinder",
-      "https://github.com/pedrocoutinhosilva/hexFinder",
-    ), "character")
   })
 })

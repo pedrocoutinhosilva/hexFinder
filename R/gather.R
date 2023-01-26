@@ -36,8 +36,8 @@ get_metacran_info <- function(pkg_name) {
 #' @param branchs The branches to search. Defaults to main and master.
 #' @param token A github personal access token. Defaults to the enviromental.
 #'
-#' @importFrom httr GET add_headers content
 #' @importFrom glue glue
+#' @importFrom httr2 request req_perform req_headers resp_body_json
 #'
 #' @keywords gather internal
 #' @return A named list with the branch name and the repo content
@@ -50,28 +50,28 @@ get_endpoint_content <- function(endpoint,
         endpoint = endpoint
       )
 
+      request <- httr2::request(query_endpoint)
       if (token != "") {
-        request <- GET(
-          query_endpoint,
-          add_headers(Authorization = paste("Bearer", token, sep = " "))
-        )
-      } else {
-        request <- GET(
-          query_endpoint
-        )
+        request <- request |>
+          req_headers(Authorization = paste("Bearer", token, sep = " "))
       }
+      request <- req_perform(request) |> catch()
 
-      if (request$status_code != 200) {
+      if (is.null(request) ||
+          is.null(request$status_code) ||
+          request$status_code != 200) {
         return(NULL)
       }
 
       list(
-        content = httr::content(request, "parsed"),
+        content = resp_body_json(request),
         branch = branch
       )
     }) |>
     keep(\(response) {
-      if (is.null(response$content) || is.null(response$content$tree)) {
+      if (is.null(response) ||
+          is.null(response$content) ||
+          is.null(response$content$tree)) {
         return(FALSE)
       }
 
@@ -230,7 +230,6 @@ keep_good_ratio_images <- function(paths, download_endpoint, branch) {
 #'
 #' @importFrom stringr str_replace
 #' @importFrom glue glue
-#' @importFrom httr GET content add_headers
 #' @importFrom stringr str_replace
 #' @importFrom purrr keep
 #' @importFrom magick image_read image_trim image_info image_write

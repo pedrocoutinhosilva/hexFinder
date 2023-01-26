@@ -1,32 +1,36 @@
 # Tests for generate_hex
 test_that("generate_hex", {
-  # package does not exist
-  expect_error(generate_hex())
-  expect_error(generate_hex("hexFinder"))
+  invisible(capture.output({
+    # package does not exist
+    expect_error(generate_hex())
+    expect_error(generate_hex("hexFinder"))
 
-  # file is generated
-  pkg_name <- "test"
-  path <- generate_hex(pkg_name, tempdir())
+    # file is generated
+    pkg_name <- "test"
+    path <- generate_hex(pkg_name, tempdir())
 
-  expect_true(file.exists(path))
+    expect_true(file.exists(path))
 
-  # long pkg name file is generated
-  pkg_name <- "areallylongnameforapackage"
-  path <- generate_hex(pkg_name, tempdir())
+    # long pkg name file is generated
+    pkg_name <- "areallylongnameforapackage"
+    path <- generate_hex(pkg_name, tempdir())
 
-  expect_true(file.exists(path))
+    expect_true(file.exists(path))
+  }))
 })
 
 # Tests for crop_image
 test_that("crop_image ", {
-  # package does not exist
-  expect_error(crop_image())
+  invisible(capture.output({
+    # package does not exist
+    expect_error(crop_image())
 
-  # generate file
-  pkg_name <- "areallylongnameforapackage"
-  path <- generate_hex(pkg_name, tempdir())
+    # generate file
+    pkg_name <- "areallylongnameforapackage"
+    path <- generate_hex(pkg_name, tempdir())
 
-  expect_invisible(crop_image(path))
+    expect_invisible(crop_image(path))
+  }))
 })
 
 # Tests for download_logo

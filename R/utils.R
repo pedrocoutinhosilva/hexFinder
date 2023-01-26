@@ -3,20 +3,21 @@
 #' @param url The resource url to check.
 #' @param status_ok The list of valid header statuses.
 #'
-#' @importFrom httr HEAD config
+#' @importFrom httr2 request req_perform req_method
 #'
 #' @keywords utils internal
 #' @return The result of evaluating the expression or NULL in case of error.
 url_file_exists <- function(url, status_ok = 200) {
-  request <- HEAD(
-    url,
-    forbid.reuse = 1,
-    config = config(connecttimeout = 60)
-  )
+  request <- request(url) |>
+    req_method("HEAD") |>
+    req_perform() |>
+    catch()
 
-  status_ok %in% lapply(request$all_headers, \(header) {
-      header$status
-  }) |> unlist()
+  if (is.null(request)) {
+    return(FALSE)
+  }
+
+  status_ok == request$status_code #nocov
 }
 
 #' Returns gitub repo links based on given URLs

@@ -21,9 +21,13 @@ Imports:
   pkgsearch,
   purrr,
   stringr,
-  httr
-RoxygenNote: 7.1.2
+  httr2
+RoxygenNote: 7.2.3
 Suggests:
-    httptest,
-    testthat (>= 3.0.0)
+    httptest2,
+    testthat (>= 3.0.0),
+    covr,
+    rmarkdown,
+    svglite,
+    knitr
 Config/testthat/edition: 3

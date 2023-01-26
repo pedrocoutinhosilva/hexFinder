@@ -5,3 +5,5 @@
 ^pkgdown$
 .lintr
 .github
+.covrignore
+.env
