@@ -6,7 +6,8 @@ Authors@R: person("Pedro", "Silva", email = "pedrocoutinhosilva@gmail.com",
   role = c("aut", "cre"))
 Description: Scavenge the web for possible hex logos for CRAN packages.
 License: MIT + file LICENSE
-URL: https://pedrocsilva.com
+URL: https://pedrocsilva.com, https://anatomyofcode.com/hexFinder/
+BugReports: https://github.com/pedrocoutinhosilva/hexFinder/issues
 Encoding: UTF-8
 LazyData: true
 Imports:
