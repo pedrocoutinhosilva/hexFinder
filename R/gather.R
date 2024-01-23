@@ -58,8 +58,8 @@ get_endpoint_content <- function(endpoint,
       request <- req_perform(request) |> catch()
 
       if (is.null(request) ||
-          is.null(request$status_code) ||
-          request$status_code != 200) {
+        is.null(request$status_code) ||
+        request$status_code != 200) {
         return(NULL)
       }
 
@@ -70,8 +70,8 @@ get_endpoint_content <- function(endpoint,
     }) |>
     keep(\(response) {
       if (is.null(response) ||
-          is.null(response$content) ||
-          is.null(response$content$tree)) {
+        is.null(response$content) ||
+        is.null(response$content$tree)) {
         return(FALSE)
       }
 
@@ -108,7 +108,6 @@ get_possible_paths <- function(content,
                                logo_patterns,
                                ignore_patterns,
                                pkg_name = "") {
-
   # if content is empty, abort
   if (length(content) < 1) {
     return(NULL)
@@ -148,21 +147,23 @@ get_possible_paths <- function(content,
 #'
 #' @importFrom glue glue
 #' @importFrom purrr map
+#' @importFrom magick image_read
 #'
 #' @keywords gather internal
 #' @return A single url path
 get_best_image <- function(paths, download_endpoint, branch) {
-# keep only good aspect rations
+  # keep only good aspect rations
   ratios <- purrr::map(paths, \(entry) {
-    info <- image_read(glue("{download_endpoint}/{branch}/{entry$path}")) |>
-        magick::image_info()
+    info <- glue("{download_endpoint}/{branch}/{entry$path}") |>
+      magick::image_read() |>
+      magick::image_info()
 
     dimentions <- c(info$width, info$height) |>
       sort()
 
     (dimentions[2] / dimentions[1])
   }) |>
-  unlist()
+    unlist()
 
   # find path with the closest aspect ratio to perfect ratio
   ideal_ratio <- 1.153
@@ -198,17 +199,17 @@ keep_good_ratio_images <- function(paths, download_endpoint, branch) {
 
     # discard way off aspect ratios
     if (aspect_ratio > 1.8) {
-      return(FALSE) #nocov
+      return(FALSE) # nocov
     }
 
     # use perfect ratio image
     if (aspect_ratio > 1.151 && aspect_ratio < 1.154) {
-      return(TRUE) #nocov
+      return(TRUE) # nocov
     }
 
     # discard really large images unless perfect ratio
     if (info$width > 1279 || info$height > 1279) {
-      return(FALSE) #nocov
+      return(FALSE) # nocov
     }
 
     return(TRUE)
@@ -223,7 +224,7 @@ keep_good_ratio_images <- function(paths, download_endpoint, branch) {
 #'   variable github_pat. If that variable is not set, you might run into API
 #'   limits when running too many queries.
 #' @param logo_patterns String of valid name.extension file names for files to
-#'   look for, separated by |. {pkg_name} Can be used as a placeholder for
+#'   look for, separated by |. pkg_name can be used as a placeholder for
 #'   the package name.
 #' @param ignore_patterns String of patterns to ignore when looking for a valid
 #'   logo. Can be part of the filename or part of the file path.
@@ -239,16 +240,16 @@ keep_good_ratio_images <- function(paths, download_endpoint, branch) {
 search_repo_logo <- function(pkg_name,
                              repository,
                              token = Sys.getenv("github_pat"),
-                             logo_patterns = getOption("hexFinder.logo_patterns"), #nolint
-                             ignore_patterns = getOption("hexFinder.ignore_patterns")) { #nolint
+                             logo_patterns = getOption("hexFinder.logo_patterns"), # nolint
+                             ignore_patterns = getOption("hexFinder.ignore_patterns")) { # nolint
 
   # Warn user about github pat. Trigers once per session
   if (token == "" && getOption("hexFinder.pat_warning_first_time")) {
-    log("No github personal access token provided.") #nocov
-    log("Limited search rates for github will apply.") #nocov
-    log("Set up github_pat environmental variable if you plan to query multiple repos in a short time") #nolint #nocov
+    log("No github personal access token provided.") # nocov
+    log("Limited search rates for github will apply.") # nocov
+    log("Set up github_pat environmental variable if you plan to query multiple repos in a short time") # nolint #nocov
 
-    options(hexFinder.pat_warning_first_time = FALSE) #nocov
+    options(hexFinder.pat_warning_first_time = FALSE) # nocov
   }
 
   # if no valid repo is given, abort
@@ -267,7 +268,7 @@ search_repo_logo <- function(pkg_name,
 
   # if the found branch is not valid, abort
   if (is.null(response)) {
-    return(NULL) #nocov
+    return(NULL) # nocov
   }
 
   paths <- get_possible_paths(
@@ -289,7 +290,7 @@ search_repo_logo <- function(pkg_name,
 
   # bail if no images
   if (is.null(paths)) {
-    return(NULL) #nocov
+    return(NULL) # nocov
   }
 
   if (length(paths) > 0) {
@@ -298,5 +299,5 @@ search_repo_logo <- function(pkg_name,
     return(path)
   }
 
-  return(NULL) #nocov
+  return(NULL) # nocov
 }

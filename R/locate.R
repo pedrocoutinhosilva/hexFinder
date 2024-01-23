@@ -13,7 +13,7 @@
 #' @keywords locator internal
 #' @return A URL that points to a image or NULL in no result was found.
 check_known_packages <- function(pkg_name,
-                                 known_packages = getOption("hexFinder.known_packages")) { #nolint
+                                 known_packages = getOption("hexFinder.known_packages")) { # nolint
 
   if (pkg_name %in% names(known_packages)) {
     raw_url <- glue(known_packages[[pkg_name]], package = pkg_name)
@@ -32,7 +32,7 @@ check_known_packages <- function(pkg_name,
 #'
 #' @param pkg_name A single string with the name of a package to find
 #'   the hex for.
-#' @param known_packages Named list with known curated repos that store logos
+#' @param known_repos Named list with known curated repos that store logos
 #'   for some packages. quality on these is usually higher that normal.
 #'
 #' @importFrom glue glue
@@ -40,7 +40,7 @@ check_known_packages <- function(pkg_name,
 #' @keywords locator internal
 #' @return A URL that points to a image or NULL in no result was found.
 check_known_repos <- function(pkg_name,
-                              known_repos = getOption("hexFinder.known_repos")) { #nolint
+                              known_repos = getOption("hexFinder.known_repos")) { # nolint
 
   for (template in known_repos) {
     raw_url <- glue(template, package = pkg_name)

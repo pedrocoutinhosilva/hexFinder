@@ -10,7 +10,7 @@ check_known_repos(pkg_name, known_repos = getOption("hexFinder.known_repos"))
 \item{pkg_name}{A single string with the name of a package to find
 the hex for.}
 
-\item{known_packages}{Named list with known curated repos that store logos
+\item{known_repos}{Named list with known curated repos that store logos
 for some packages. quality on these is usually higher that normal.}
 }
 \value{

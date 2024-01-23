@@ -22,7 +22,7 @@ variable github_pat. If that variable is not set, you might run into API
 limits when running too many queries.}
 
 \item{logo_patterns}{String of valid name.extension file names for files to
-look for, separated by |. {pkg_name} Can be used as a placeholder for
+look for, separated by |. pkg_name can be used as a placeholder for
 the package name.}
 
 \item{ignore_patterns}{String of patterns to ignore when looking for a valid

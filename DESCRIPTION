@@ -1,7 +1,7 @@
 Package: hexFinder
 Type: Package
 Title: Find Hex Logos for CRAN Packages
-Version: 0.8.1
+Version: 0.8.2
 Authors@R: person("Pedro", "Silva", email = "pedrocoutinhosilva@gmail.com",
   role = c("aut", "cre"))
 Description: Scavenge the web for possible hex logos for CRAN packages.
@@ -9,6 +9,8 @@ License: MIT + file LICENSE
 URL: https://pedrocsilva.com
 Encoding: UTF-8
 LazyData: true
+Depends:
+  R (>= 4.3.0)
 Imports:
   ggplot2,
   hexSticker,
