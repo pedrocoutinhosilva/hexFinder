@@ -91,7 +91,7 @@ find_hex <- function(pkg_names,
       }
 
       # Nothing was found, generate new one
-      path <- generate_hex(pkg_name, output)
+      path <- generate_hex(pkg_name, output, colors, fallback_colors)
       log("No logo found, generated hex for", pkg_name)
 
       return(path)
