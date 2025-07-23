@@ -9,7 +9,9 @@ find_hex(
   output = NULL,
   repo = NULL,
   skip_known_logos = FALSE,
-  overwrite = FALSE
+  overwrite = FALSE,
+  colors = c("#1881C2", "#87B13F"),
+  fallback_colors = c("#a60000", "#360000")
 )
 }
 \arguments{
@@ -28,6 +30,13 @@ outdated versions of logos, but slower. Defaults to FALSE.}
 
 \item{overwrite}{If a logo with the package name already exists in the
 output folder, should it be overwritten. Defaults to FALSE.}
+
+\item{colors}{A vector of two valid colors. [1] for the fill and [2] for
+the outline of the generated logo. Used if the package exists on CRAN.}
+
+\item{fallback_colors}{A vector of two valid colors. [1] for the fill and
+[2] for the outline of the generated logo. Used if the package
+does not exist on CRAN.}
 }
 \value{
 No return, called for side effects.

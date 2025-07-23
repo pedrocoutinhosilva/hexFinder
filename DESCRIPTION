@@ -1,7 +1,7 @@
 Package: hexFinder
 Type: Package
 Title: Find Hex Logos for CRAN Packages
-Version: 0.8.2
+Version: 0.8.3
 Authors@R: person("Pedro", "Silva", email = "pedrocoutinhosilva@gmail.com",
   role = c("aut", "cre"))
 Description: Scavenge the web for possible hex logos for CRAN packages.
@@ -24,7 +24,7 @@ Imports:
   purrr,
   stringr,
   httr2
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.1
 Suggests:
     httptest2,
     testthat (>= 3.0.0),

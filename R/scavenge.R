@@ -15,6 +15,11 @@
 #'   outdated versions of logos, but slower. Defaults to FALSE.
 #' @param overwrite If a logo with the package name already exists in the
 #'   output folder, should it be overwritten. Defaults to FALSE.
+#' @param colors A vector of two valid colors. [1] for the fill and [2] for
+#'   the outline of the generated logo. Used if the package exists on CRAN.
+#' @param fallback_colors A vector of two valid colors. [1] for the fill and
+#'   [2] for the outline of the generated logo. Used if the package
+#'   does not exist on CRAN.
 #'
 #' @keywords finder external
 #' @return No return, called for side effects.
@@ -23,8 +28,9 @@ find_hex <- function(pkg_names,
                      output = NULL,
                      repo = NULL,
                      skip_known_logos = FALSE,
-                     overwrite = FALSE) {
-
+                     overwrite = FALSE,
+                     colors = c("#1881C2", "#87B13F"),
+                     fallback_colors = c("#a60000", "#360000")) {
   if (is.null(output)) {
     output <- tempdir()
     log("No output folder provided, saving in temp folder")
