@@ -55,6 +55,15 @@ generate_hex <- function(name,
   output_path
 }
 
+# Detect svg for better reading (fewer errors!)
+image_reader = function(path, ...) {
+  if (tolower(tools::file_ext(path)) == "svg" && requireNamespace("rsvg")) {
+    magick::image_read_svg(path, ...)
+  } else {
+    magick::image_read(path, ...)
+  }
+
+}
 #' Crops the empty space from a image
 #'
 #' @param path The path of the image to crop.
@@ -64,7 +73,7 @@ generate_hex <- function(name,
 #' @keywords images internal
 #' @return No return, called for side effects.
 crop_image <- function(path) {
-  original <- image_read(path)
+  original <- image_reader(path)
   trimmed <-  original |>
     image_trim()
 
